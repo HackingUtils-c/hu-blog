@@ -1,0 +1,67 @@
+name: HackingUtils.c blog
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+      - name: Clean bundler cache
+        run: |
+          echo "Limpiando el caché de Bundler..."
+          bundle clean --force
+          echo "Caché de Bundler limpiado."
+      - name: Install Jekyll
+        run: |
+          echo "Instalando Jekyll..."
+          bundle install
+          echo "Jekyll instalado."
+      - name: Build with Jekyll
+        run: |
+          echo "Construyendo con Jekyll..."
+          bundle exec jekyll build
+          echo "Construcción de Jekyll completada."
+        env:
+          JEKYLL_ENV: production
+      - name: Check _site permissions
+        run: |
+          echo "Verificando permisos de _site..."
+          ls -la _site
+          echo "Permisos de _site verificados."
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site #Asegurate que el path es correcto.
+        
+        
+  deploy:
+    environment:
+      name: github-pages
+      url: "https://essenemigz.github.io"
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          verbose: true #habilita logs detallados.

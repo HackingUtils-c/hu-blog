@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/hu-blog/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/hu-blog/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Curso de Python - HackingUtils.c | HackingUtils.c blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Curso de Python - HackingUtils.c" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blog comnitario de HackingUtils.c" />
+<meta property="og:description" content="Blog comnitario de HackingUtils.c" />
+<link rel="canonical" href="https://essenemigz.github.io/hu-blog/posts/languages/python-course" />
+<meta property="og:url" content="https://essenemigz.github.io/hu-blog/posts/languages/python-course" />
+<meta property="og:site_name" content="HackingUtils.c blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-09T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Curso de Python - HackingUtils.c" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-09T00:00:00-04:00","datePublished":"2025-03-09T00:00:00-04:00","description":"Blog comnitario de HackingUtils.c","headline":"Curso de Python - HackingUtils.c","mainEntityOfPage":{"@type":"WebPage","@id":"https://essenemigz.github.io/hu-blog/posts/languages/python-course"},"url":"https://essenemigz.github.io/hu-blog/posts/languages/python-course"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/hu-blog/">
+          <h1>HackingUtils.c blog</h1>
+        </a>
+        <h2>Blog comnitario de HackingUtils.c</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>Python es un lenguaje de programación de alto nivel y multiparadigma, también es multiplataforma por lo que este es fácilmente usable para múltiples entornos; como lo son el desarrollo de escritorio, el desarrollo web, desarrollo móvil, entre otros.  Es un lenguaje con un tipado dinámico, esto no es un detalle importante por ahora.</p>
+
+<p>Python es multiparadigma ya que soporta parcialmente la programación orientada a objetos, la programación imperativa y la programación funcional. La programación imperativa es la que vamos a aprender primero como paradigma de programacion ya que es la más sencilla de entender y es con la que todos empiezan (aunque muchas veces ni siquiera lo saben); se trata de una forma de programar que sigue un principio simple: “Dale instrucciones al computador línea por línea”. Esto quiere decir que vamos a programar de modo de que cuando la computadora ejecute nuestro código este haga una instrucción a la vez según le vamos indicando. Esto quiere decir que si queremos que sume 2 + 2 y luego lo multiplique por 10, tenemos que tener la linea 1 donde se sumara 2 + 2 y se va a guardar el resultado y luego hacemos la otra operación del multiplicación, así iremos haciendo eso con todo el programa.</p>
+
+<p>Un paradigma de programación es un conjunto de reglas sobre como desarrollar un software, es casi como un manual de instrucciones que te va diciendo que debes de hacer en ciertos casos para mantener una estructura igual en todo tu código. Los paradigmas no se deben considerar dogmas debido a que no son reglas universales y ni tampoco se debe programar sí o sí tal cual dicta un paradigma, si no que son herramientas que, en caso de que nos sea provechoso, podemos usar en nuestro software para mantenerlo estructurado. El paradigma de programación imperativa no es el más eficiente para software grande pero de igual manera encuentra un buen uso a la hora de programar scripts pequeños.</p>
+
+<p>Un script es un programa que da instrucciones a un sistema, generalmente son sumamente pequeños y no son sistemas, pero pueden formar parte de uno, para el paradigma imperativo este es un excelente caso de uso.</p>
+
+<p>El lenguaje de programación Python se usa ampliamente en ciencia de datos, inteligencia artificial, servidores, software como servicio, seguridad y informática, redes, ciber seguridad y muchísimas áreas mas. Por su facilidad de uso y gran alcance es un gran lenguaje por el cual empezar.</p>
+
+<h2 id="descargar-python">Descargar Python</h2>
+
+<p>Para descargar Python debemos a su página web, y entraremos al enlace de descarga para windows (https://www.python.org/downloads/windows/). De este modo, pasaremos a descargar el ejecutable, una vez que lo tengamos, debemos abrirlo y empezar con la instalación de dicho lenguaje de programación. Recalcar, solo estamos descargando el interprete de Python. Un interprete es, para los lenguajes de programación, lo que ejecuta cada instrucción que escribimos; se podría considerar un traductor ya que pasa nuestro código fuente a byte code, este no es interpretado directamente por la CPU o procesador si no que es interpretado por la maquina virtual del interprete, que es por asi decirlo una computadora virtual, además, el interprete detecta errores en tiempo real, este tipo de comportamiento de interprete con maquinas virtuales también lo tiene Java. Hay otra alternativa que es instalar Python desde la Microsoft Store, si luego al seguir el curso usted tiene algún problema relacionado a Python (al ejecutar, por ejemplo), intente con esa alternativa, de lo contrario póngase en contacto con su maestro.</p>
+
+<h2 id="entrada-y-salida">Entrada y salida</h2>
+
+<p>Una vez instalado Python correctamente y entendido su principio de funcionamiento básico podremos pasar a las operaciones básicas. Presionamos la tecla Windows+R y escribimos <em>cmd</em>, esto nos abrirá una ventana negra, el cual se le conoce como cmd. Seguido de esto teclearemos Python y daremos enter; ahí se nos va a abrir el interprete de Python, en este interprete podremos escribir nuestras primeras líneas de código.</p>
+
+<p>En una computadora existen dos tipos de operaciones exclusivamente, estas son las operaciones de entrada y salida. Las operaciones de entrada son las mas sencillas de entender, simplemente se refiere a cuando estamos mandándole información a la computadora, esto engloba incluso el simple hecho de dar un click o de usar su teclado, por otro lado, las operaciones de salida se refiere a cuando la computadora nos da información o más bien, <em>nos presenta un resultado,</em> con esto quiero decir que cuando imprimimos un documento, vemos una imagen, reproducimos un video o consumimos contenido, estamos haciendo operaciones de salida.</p>
+
+<p>En Python existen dos funciones principales para realizar este tipo de operaciones, para las operaciones de salida tenemos <code class="language-plaintext highlighter-rouge">print()</code> y para las operaciones de entrada tenemos <code class="language-plaintext highlighter-rouge">input()</code> . La función <code class="language-plaintext highlighter-rouge">print()</code> tiene muchísimas formas de usarse y puede personalizarse hasta limites inesperados, pero a grandes rasgos solo lo usaremos para imprimir objetos en la terminal, dichos objetos pueden tener cualquier tipo de dato, <code class="language-plaintext highlighter-rouge">print()</code> dentro de sus paréntesis debe tener el texto u objeto que queremos imprimir, este puede ser cualquier texto, con la consideración de que debe estar entre comillas, como aquí <code class="language-plaintext highlighter-rouge">print("Hola mundo")</code> , esto imprime tal cual el texto que pasamos y nada mas; por otro lado, <code class="language-plaintext highlighter-rouge">input()</code> no necesariamente necesita que le pasemos información, pero si es apropiado agregar un prefijo o indicacion al usuario para que sepa que esperamos que introduzca información: <code class="language-plaintext highlighter-rouge">input("Ingrese su edad: ")</code> este puede ser un ejemplo de input, lo que hace esta función es pausar todo el programa hasta que el usuario teclea enter, cuando eso pase el programa seguirá su curso normal independientemente de si se introdujo información o no.</p>
+
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<p>Dependiendo del tipo de dato viene su comportamiento, esto quiere decir que no podemos interactuar con los datos de tipo de texto igual que como lo hacemos con los numéricos, ya que su comportamiento y forma de tratarlos es diferente.</p>
+
+<p>Los tipos de datos basicos de Python son int, string (str), float (flotante o decimal), bool (booleano) y None.</p>
+
+<h3 id="explicación-por-tipo-de-dato">Explicación por tipo de dato</h3>
+
+<ol>
+  <li>Los tipos de datos int abarcan los números enteros, esto incluye los números negativos, positivos y el cero. Estos se comportan como los números que conocemos de toda la vida. Ejemplos: 0, -1222, 8000, 24</li>
+  <li>Los tipos de datos string, str o cadenas de texto, son como su nombre lo sugiere, texto, en Python esos se representan siempre entre comillas, cada cosa que vean entre comillas dobles o simples se considera de tipo string. Por esta misma razón es que les pasábamos información entre comillas a <code class="language-plaintext highlighter-rouge">print()</code> e <code class="language-plaintext highlighter-rouge">input()</code>, como queríamos que imprimiera un texto en el cmd tuvimos que pasarle un string. Ejemplos: ‘a’, “Hola mundo”, ‘Hola mundo’, “”, ‘’</li>
+  <li>Los tipos de datos float o flotantes son un tipo de dato que hace referencia a los números decimales, desde 1.0 hasta cualquier numero con incontables decimales. Se comportan similar a un int, pero con algunos cambios para que el programador pueda tener control sobre los decimales que se le han agregado. Ejemplos: 33.3333, 0.0, -9.4</li>
+  <li>Bool o booleano hace referencia a un tipo de dato que toma el concepto de funcionamiento básico de una computadora. Las computadoras solo tiene dos respuestas posibles, 1 o 0, verdadero o falso y justamente eso son los booleanos, True o False en Python hacen referencia a si una instrucción debe ejecutarse o no, eso lo veremos mas adelante con las condiciones. Son palabras reservadas por lo que donde se vea True o False Python lo interpreta como un bool.</li>
+  <li>None es un tipo de dato nulo, no tiene valor y no se puede interactuar con el como con los demás tipos. Es una palabra reservada también.</li>
+</ol>
+
+<h2 id="variables">Variables</h2>
+
+<p>Las variables son la forma que todos los lenguajes de programación nos dan para guardar información en la RAM de la computadora, esto quiere decir que sus variables solo existen mientras se ejecuta el programa, inmediatamente se cierra el programa su información se desvanece, por lo que no deben usarse variables para guardado de información persistente, porque no es posible. Las variables se guardan en una dirección de memoria.</p>
+
+<p>La estructura para <em>definir</em> una variable en Python es simple, consta de un indentificador o nombre y un valor, por lo que la sintaxis es la siguiente: <code class="language-plaintext highlighter-rouge">Indentificador = Valor</code></p>
+
+<p>Entonces, pueden usar el nombre que deseen para sus variables en Python y ademas, pueden guardar cualquier tipo de dato en las mismas.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mensaje</span> <span class="o">=</span> <span class="s">"Hola mundo"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En este ejemplo, estoy usando una variable para guardar un mensaje y luego imprimirlo con la función <code class="language-plaintext highlighter-rouge">print()</code>. ¿De qué tipo de dato viene siendo la variable mensaje?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mensaje</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca lo que quiere decir: "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Este código usa lo que hemos aprendido hasta ahora para guardar lo que el usuario escribe en una variable, por lo que esto nos abre un mar de posibilidades, debido a que ahora el usuario puede interactuar con nuestro programa y nosotros podremos interpretar las operaciones de entrada.</p>
+
+<p>Ahora que podemos guardar información, es importante recalcar que el nombre <em>variable</em> viene justamente porque es un valor que siempre puede cambiar, en todos los lenguajes los valores de las variables pueden cambiar (a menos que el programador defina que no debe ser así), lo que no puede cambiar es su tipo en los lenguajes de tipado estático, por lo que aprovecharemos la capacidad de Python de cambiar entre tipos de datos para hacer software mas sencillo de entender y mantener.</p>
+
+<p>Además, podemos usar la función <code class="language-plaintext highlighter-rouge">del()</code> en Python para liberar las direcciones de memoria, en otras palabras <em>borramos</em> los datos o variables.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">x</span> <span class="c1"># True
+</span><span class="k">del</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span> <span class="c1"># ERROR
+</span></code></pre></div></div>
+
+<h2 id="operadores">Operadores</h2>
+
+<p>Los operadores son como en las matemáticas, aunque hay algunos que directamente son exclusivos del lenguaje, pasemos con los operadores aritméticos primero.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">+</code> o adición: Suma dos valores, ya sea int, float o str. Los tipos de dato a sumar deben ser compatibles, str es compatible consigo mismo, pero int y float son compatibles entre ellos ademas de ser compatibles consigo mismo. <code class="language-plaintext highlighter-rouge">5 + 3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">-</code> o sustracción: Resta dos valores. Los tipos de dato deben ser int o float. <code class="language-plaintext highlighter-rouge">1 - 1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">*</code> o multiplicación: Multiplica dos valores. Los tipos de dato deben ser int o float. <code class="language-plaintext highlighter-rouge">100 * 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/</code> o división: Divide dos valores. Los tipos de datos deben ser int o float y si intentan dividir <code class="language-plaintext highlighter-rouge">0 / 0</code> da error automáticamente. <code class="language-plaintext highlighter-rouge">100 / 2.7832</code></li>
+  <li><code class="language-plaintext highlighter-rouge">%</code> o modulo. Nos da el resto de la división, no su consiente como el operador <code class="language-plaintext highlighter-rouge">/</code>. <code class="language-plaintext highlighter-rouge">100 % 2.7832</code></li>
+  <li><code class="language-plaintext highlighter-rouge">**</code> o potencia: Potencia el primer numero (el de la izquierda, que toma como base) al numero que indique en el segundo lugar (el de la derecha, que toma de numerador). <code class="language-plaintext highlighter-rouge">10**2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">//</code> división entera: Esta división es lo mismo que la <code class="language-plaintext highlighter-rouge">/</code> pero se redondea por si misma, haciendo que el resultado siempre sea un entero y no un float. <code class="language-plaintext highlighter-rouge">100 // 2.7832</code></li>
+</ol>
+
+<p>Por otro lado, existen los operadores de comparación, estos devuelven booleanos dependiendo si la comparación es cierta o no.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">==</code> es igual a: Este operador indica si un valor x es igual a un valor y. <code class="language-plaintext highlighter-rouge">5 == 3 # False</code></li>
+  <li><code class="language-plaintext highlighter-rouge">!=</code> es diferente a: Este operador es lo contrario a la igualdad, evalúa la diferencia entre dos valores. <code class="language-plaintext highlighter-rouge">5 != 3 # True</code></li>
+  <li><code class="language-plaintext highlighter-rouge">&gt;, &lt;, =&gt;, &lt;=</code> Estos operadores son tal cual como en las matemáticas. Mayor que: <code class="language-plaintext highlighter-rouge">5 &gt; 3 # True</code> , Menor que: <code class="language-plaintext highlighter-rouge">5 &lt; 3 # False</code> , Mayor o igual <code class="language-plaintext highlighter-rouge">5 =&gt; 3 # True</code> <code class="language-plaintext highlighter-rouge">5 =&gt; 5 # False</code> <code class="language-plaintext highlighter-rouge">5 =&gt; 6 # False</code> , Menor o igual <code class="language-plaintext highlighter-rouge">5 &lt;= 3 # False</code> <code class="language-plaintext highlighter-rouge">5 &lt;= 5 # True</code> <code class="language-plaintext highlighter-rouge">5 &lt;= 6 # True</code></li>
+</ol>
+
+<p>Los operadores lógicos son condiciones extras.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">and</code> (Y lógico), es para evaluar que dos o mas operaciones sean verdaderas, si al menos una de todas estas es falsa, devuelve falso, si todas son verdadero, devuelve True. <code class="language-plaintext highlighter-rouge">10 &gt; 3 and 10 &lt;= 15 # True</code> <code class="language-plaintext highlighter-rouge">10 &gt; 15 and 10 &gt; 20 # False</code></li>
+  <li><code class="language-plaintext highlighter-rouge">or</code> (O lógico), es para evaluar muchas condiciones tambien, pero en este caso solo con que una sea verdadera ya es suficiente para que devuelva True, por lo que para conseguir un False, todas las condiciones deben ser Falsas. <code class="language-plaintext highlighter-rouge">5 == 0 or 60 &lt; 1 or 1 == 1 # True</code></li>
+  <li><code class="language-plaintext highlighter-rouge">not</code> (Negación lógica), invierte el valor que conseguimos de las condiciones, es decir, vuelve a True un False y a False un True. <code class="language-plaintext highlighter-rouge">not 5 == 5 # False</code></li>
+</ol>
+
+<p>Los operadores de asignación son operadores que se usan para interactuar sobre variables junto a ciertas operaciones matemáticas.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">=</code> (Asignación), ya lo vimos en la parte de arriba, simplemente signa un valor a un identificador.</li>
+  <li><code class="language-plaintext highlighter-rouge">+=</code> (Asignación por adición), suma el valor de la variable al valor que se le pase y hace que la variable sea igual a ese resultado. <code class="language-plaintext highlighter-rouge">x += 5 # La variable va a ser igual 15 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">-=</code> (Asignación por sustracción), Lo mismo que con la asignacion por adision pero con resta. <code class="language-plaintext highlighter-rouge">x -= 5 # La variable va a ser igual 5 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">*=</code> (Asignación por multiplicación), <code class="language-plaintext highlighter-rouge">x *= 5 # La variable va a ser igual 50 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/=</code> (Asignación por división), <code class="language-plaintext highlighter-rouge">x /= 5 # La variable va a ser igual 2.0 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">%=</code> (Asignación por modulo), <code class="language-plaintext highlighter-rouge">x %= 5 # La variable va a ser igual 0 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">//=</code> (Asignación por division entera), <code class="language-plaintext highlighter-rouge">x //= 5 # La variable va a ser igual 2 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">**=</code> (Asignacion por potencia), <code class="language-plaintext highlighter-rouge">x **= 5 # La variable va a ser igual 100,000 luego de la asignacion, suponiendo que su valor original era 10</code></li>
+</ol>
+
+<p>El operador de identidad es para evaluar si dos valores son un mismo objeto, dos valores van a ser el mismo objeto mientras estén en la misma dirección de memoria:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+<span class="n">x</span> <span class="ow">is</span> <span class="n">y</span> <span class="c1"># True
+</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">x</span> <span class="ow">is</span> <span class="n">y</span> <span class="c1"># False
+</span></code></pre></div></div>
+
+<p>Podemos ver que aunque <code class="language-plaintext highlighter-rouge">y</code> sea igual a 100 (el valor de <code class="language-plaintext highlighter-rouge">x</code>) Python retorna un False, esto es porque su dirección de memoria no es igual; lamentablemente en Python no tenemos forma de interactuar con la memoria directamente, por lo que no podemos ver la dirección de memoria real, lo que sí podemos ver es el id del objeto, que es la abstracción o simplificación que tiene Python para la dirección de memoria.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="c1"># True
+</span><span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="c1"># False
+</span><span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Como pueden ver el id o dirección de memoria de la variable <code class="language-plaintext highlighter-rouge">y</code> cambia y cuando redefinimos su valor, además, cuando <code class="language-plaintext highlighter-rouge">y</code> es igual a <code class="language-plaintext highlighter-rouge">x</code> tiene el id de <code class="language-plaintext highlighter-rouge">x</code>.</p>
+
+<p>En Python cada variable que declare va a estar en espacio de memoria diferente, es decir, cada uno va a tener una dirección de memoria única, por lo que aunque tenga dos variables con el mismo valor, no son el mismo objeto.</p>
+
+<h2 id="comentarios-y-doc-strings">Comentarios y doc strings</h2>
+
+<p>Como parte de ser un buen programador y para crear código mas mantenible con el tiempo, hay que saber manejar el dejar notas en nuestro código. Para esto, Python no deja dos herramientas sumamente útiles.</p>
+
+<p>Los comentarios son partes de su código que a la hora de ejecutar su programa simplemente son ignorados, por lo que afecta su ejecución, un ejemplo de un comentario es <code class="language-plaintext highlighter-rouge"># Esto es un comentario</code> , como podrán observar, la sintaxis es simplemente agregar el símbolo <code class="language-plaintext highlighter-rouge">#</code> delante de su texto.</p>
+
+<p>Los docstrings son texto que se excribe entre tres comillas simples o dobles, este puede ser usado como texto en bloque por lo que al contrario de los comentarios, con solo un doc string pueden escribir varios parrafos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""
+Este es un docstring.
+Puedo usar párrafos en el.
+"""</span>
+</code></pre></div></div>
+
+<h2 id="condicionales">Condicionales</h2>
+
+<p>En programación, las condicionales son como en el mundo real, si una condición se cumple pueden pasar varias cosas, es igual en el código. A la hora de trabajar con condicionales entra el tema de los booleanos y los operadores de comparación que ya vimos anteriormente , primero empezaremos con el tipo de condicional mas sencillo.</p>
+
+<p>La condicional o cláusula <code class="language-plaintext highlighter-rouge">if</code> es una palabra reservada que del inglés se traduce literalmente como <em>si…</em>, es decir, “Si pasa esto”, es como una suposición, esto lo podemos usar a nuestro favor para hacer uso de un bloque de código solo cuando algo específico pasa. <code class="language-plaintext highlighter-rouge">if</code> espera que le pasemos una condición o evaluación, la cual si es <code class="language-plaintext highlighter-rouge">True</code>, va a ejecutar el código que le pasemos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clave</span> <span class="o">=</span> <span class="s">"12345"</span>
+<span class="n">intento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca la clave: "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">clave</span> <span class="o">!=</span> <span class="n">intento</span><span class="p">:</span> <span class="c1"># La condicional devuelve True cuando se cumple
+</span>	<span class="k">print</span><span class="p">(</span><span class="s">"Clave incorrecta, intenta de nuevo."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En este ejemplo de código esperamos que el usuario introduzca una clave, la cual se va a comparar con la clave correcta que esta guardada en una variable. Si la clave es diferente a la que tenemos guardada, nos dira que la clave es incorrecta. En ese espacio que tiene el if para poner condicionales podemos usar los operadores lógicos y de comparación a nuestro antojo, tal cual estábamos haciendo hace un momento.</p>
+
+<p>Esto esta bien, pero tenemos aun el caso donde debemos darle un mensaje de éxito al usuario si introduce la clave correcta, esto lo podríamos hacer con este código.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clave</span> <span class="o">=</span> <span class="s">"12345"</span>
+<span class="n">intento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca la clave: "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">clave</span> <span class="o">!=</span> <span class="n">intento</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave incorrecta, intenta de nuevo."</span><span class="p">)</span>
+	
+<span class="k">if</span> <span class="n">clave</span> <span class="o">==</span> <span class="n">intento</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave correcta"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Este codigo funciona, pero en realidad, no es lo mas eficiente, ya que ambos <code class="language-plaintext highlighter-rouge">if</code> estan estrechamente relacionados entre ellos y si se fijan en las comparaciones, el de abajo solo actua cuando el de arriba es <code class="language-plaintext highlighter-rouge">False</code>, para estos casos donde queremos que cuando un <code class="language-plaintext highlighter-rouge">if</code> sea <code class="language-plaintext highlighter-rouge">False</code> haya otro que se ejecute tenemos la cláusula <code class="language-plaintext highlighter-rouge">else</code>, la cual solo se ejecuta cuando el <code class="language-plaintext highlighter-rouge">if</code> no lo hace.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clave</span> <span class="o">=</span> <span class="s">"12345"</span>
+<span class="n">intento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca la clave: "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">clave</span> <span class="o">!=</span> <span class="n">intento</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave incorrecta, intenta de nuevo."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave correcta"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Este codigo hace lo mismo que el de arriba, pero ahora no se debe evaluar la condición de nuevo, ya que el <code class="language-plaintext highlighter-rouge">else</code> se va a ejecutar solo cuando el <code class="language-plaintext highlighter-rouge">if</code> sea <code class="language-plaintext highlighter-rouge">False</code>. Un <code class="language-plaintext highlighter-rouge">else</code> necesita si o si tener un <code class="language-plaintext highlighter-rouge">if</code> por encima, si no seria un error de sintaxis y su programa no funcionaria, por lo que esto seria invalido.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clave</span> <span class="o">=</span> <span class="s">"12345"</span>
+<span class="n">intento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca la clave: "</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span> <span class="c1"># No se evalua nada y falta el if
+</span>	<span class="k">print</span><span class="p">(</span><span class="s">"Clave correcta"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Siguiendo con las condicionales nuevas, en caso de que quieran evaluar múltiples casos de uso relacionados entre si, pueden hacer uso de <code class="language-plaintext highlighter-rouge">elif</code>, <code class="language-plaintext highlighter-rouge">elif</code> es la combinación de <code class="language-plaintext highlighter-rouge">else</code> e <code class="language-plaintext highlighter-rouge">if</code>, si el la condicional que tiene arriba no se cumple, el pasa a evaluar algo y si es <code class="language-plaintext highlighter-rouge">True</code>, pasa a ejecutarse.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clave</span> <span class="o">=</span> <span class="s">"12345"</span>
+<span class="n">segunda_clave</span> <span class="o">=</span> <span class="s">"123456"</span>
+<span class="n">intento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduzca la clave: "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">clave</span> <span class="o">!=</span> <span class="n">intento</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave incorrecta, intenta de nuevo."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">clave</span> <span class="o">!=</span> <span class="n">segunda_clave</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"La segunda clave tambien es incorrecta."</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Clave correcta"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En este codigo, el usuario puede fallar introduciendo la primera clave y la segunda, pero si no falla con ninguna de las dos es porque sabe la clave, evidentemente, así que el <code class="language-plaintext highlighter-rouge">else</code> se ejecuta en ese caso de que las claves introducidas no sean diferentes a las guardadas.</p>
+
+<p>Continuando, en otros lenguajes existe algo llamado <code class="language-plaintext highlighter-rouge">switch</code>, Python no lo tiene pero tiene algo muy parecido (por no decir identico) llamado <code class="language-plaintext highlighter-rouge">match</code> . Su sintaxis es la siguiente.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">match</span> <span class="n">variable_a_evaluar</span><span class="p">:</span>
+	<span class="n">case</span> <span class="s">"Posible valor"</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="s">"Codigo"</span><span class="p">)</span>
+	<span class="n">case</span> <span class="n">_</span><span class="p">:</span> <span class="c1"># este es el else del los match
+</span>		<span class="k">print</span><span class="p">(</span><span class="s">"Codigo"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Como pueden ver es casi el mismo código de antes, en el parámetro del <code class="language-plaintext highlighter-rouge">match</code> se espera que se pase una variable (la que queremos evaluar) y los <code class="language-plaintext highlighter-rouge">case</code> son todos los posibles valores que puede tener. No es recomendado usar <code class="language-plaintext highlighter-rouge">match</code>.</p>
+
+<h2 id="métodos-y-funciones">Métodos y funciones</h2>
+
+<p>Es importante que en este punto diferenciemos lo que es un método y una función, ya que son muy similares pero no son lo mismo. Una función es un bloque de código reutilizable, esta realiza una tarea en específico, mientras que un método es una función asociada a un objeto, es decir, una función que se relaciona a un objeto específico. Esto lo acabarán de entender más adelante cuando estemos trabajando con objetos y funciones.</p>
+
+<h2 id="estructuras-de-datos-manipulación-y-métodos">Estructuras de datos, manipulación y métodos</h2>
+
+<p>Las estructuras de datos son un conjunto de datos ordenados de una manera que permite interpretar y organizar la información de mejor manera, ya que estas siguen un orden o patrón designado.</p>
+
+<p>Este tema existe en todos los lenguajes de programación por igual, pero no existen las mismas estructuras, en el caso de Python existen las listas, diccionarios, tuplas y conjuntos, cada cual tiene sus características especiales por si mismos.</p>
+
+<p>Las listas son el tipo mas usado de estructura de datos en Python, estas son una lista desordenada de datos, se pueden  repetir datos aquí y su manipulación no es complicada. La sintaxis es simple, solo debemos poner un identifcador y un valor, como si fuera una variable, solo que a la hora de designar el valor, deben ser dos llaves, como en este ejemplo.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Lista vacia
+</span><span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="s">"Hola"</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span> <span class="c1"># Lista con elementos
+</span></code></pre></div></div>
+
+<p>Las listas pueden declararse vacias o con elementos dentro, ademas, pueden tener dentro cualquier tipo de dato, mezclados o no.</p>
+
+<p>En Python todo es un objeto, las listas no son la excepcion, por lo que tenemos los llamadas <em>metodos</em> para editar este objeto.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">lista</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"Metodo Append"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Como pueden ver la sintaxis de los metodos es <code class="language-plaintext highlighter-rouge">objeto.metodo</code> , en este codigo el metodo <code class="language-plaintext highlighter-rouge">append()</code> agrega un elemento al final de la lista.</p>
+
+<p>Las listas se organizan e interpretan por indices, es decir, no van a conseguir un valor de una lista introduciendo simplemente el valor, deben indicar el indice o posición donde esta. El primer elemento de una lista esta en la posición 0, por lo que el 2 esta en el índice o posición 1 y así con todos los demás.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lista_nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lista_nums</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s">"-"</span><span class="p">,</span> <span class="n">lista_nums</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># 1-5
+</span></code></pre></div></div>
+
+<p>Los métodos mas comunes para editar listas son los siguientes.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">mi_lista</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># Añadir un elemento al final
+# Insertar un elemento en una posición específica
+# El primer argumento es la posicion (que recuerden va a partir del 0)
+# Y el segundo es el valor a introducir, puede ser lo que sea
+</span><span class="n">mi_lista</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> 
+<span class="c1"># Eliminar el primer elemento cuyo valor sea 9
+</span><span class="n">mi_lista</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>  
+<span class="c1"># Eliminar y devolver el último elemento
+# Devolver significa retorno, osea que si guardan el pop
+# En una variable van a ver el elemento en su variable
+# Dentro de los parentesis tambien pueden pasarle un argumento
+# Para borrar el elemento de una posicion especifica
+</span><span class="n">retorno</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">retorno</span><span class="p">)</span>
+<span class="n">mi_lista</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Elimina el valor de la posicion 1
+# Ordenar la lista
+# En numeros, por defecto es en orden ascendente
+# En el texto depende del parametro key que se le pase
+# key=len, por ejemplo, ordena todo en base a su tamaño
+</span><span class="n">mi_lista</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span> 
+<span class="c1"># Invertir los elementos de la lista 
+</span><span class="n">mi_lista</span><span class="p">.</span><span class="n">reverse</span><span class="p">()</span>  
+<span class="c1"># Para conocer el indice de un elemento puede usar el metodo index
+# Este metodo se comparte con las tuplas
+</span><span class="n">indice</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Para editar una lista solo tiene que llamar a la lista por su indice
+# En este caso el valor de la posicion 2 es editado
+</span><span class="n">mi_lista</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">"Nuevo valor"</span>
+</code></pre></div></div>
+
+<p>Las tuplas son un tipo de estructura de dato que es inmutable, es decir, estas no pueden ser editadas, por lo que una vez definidas siguen siendo iguales siempre. Los metodos comunes, por lo tanto, son practicamente nulos. Las tuplas se definen igual que las listas, pero en vez de usar <code class="language-plaintext highlighter-rouge">[]</code> se usan parentesis. Ademas, las tuplas son mas rapidas para acceder a su contenido y ocupan menos memoria.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mi_tupla</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Crear una tupla
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># Contar el número de veces que aparece un valor
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>  <span class="c1"># Obtener el índice de un valor
+</span></code></pre></div></div>
+
+<p>Esto es todo por parte de las tuplas.</p>
+
+<p>Otro tipo de dato muy importante son los diccionarios, estos son tal cual como los diccionarios que conocemos, tienen una palabra que se llama clave y un valor asignado a dicha clave, se declaran entre llaves (<code class="language-plaintext highlighter-rouge">{}</code>), estos son una estructura desordenada tambien. Las claves no se pueden repetir, pero los valores si.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">diccionario</span> <span class="o">=</span> <span class="p">{</span><span class="s">"clave"</span><span class="p">:</span><span class="s">"valor"</span><span class="p">,</span> <span class="s">"a"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">"b"</span><span class="p">:</span><span class="bp">False</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>La forma en la que se interactua con ellos es la siguiente.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mi_diccionario</span> <span class="o">=</span> <span class="p">{</span><span class="s">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># Esta primera parte es similar a los indices de las listas
+# Añadir un nuevo par clave-valor
+</span><span class="n">mi_diccionario</span><span class="p">[</span><span class="s">"d"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>  
+<span class="c1"># Actualizar el valor de una clave existente
+</span><span class="n">mi_diccionario</span><span class="p">[</span><span class="s">"a"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span> 
+
+<span class="c1"># Obtener el valor asociado a una clave
+</span><span class="n">valor</span> <span class="o">=</span> <span class="n">mi_diccionario</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span> <span class="c1"># Este mas seguro porque devuelve None
+# si no encuentra nada, en cambio este otro da un error y detiene el programa.
+</span><span class="n">valor</span> <span class="o">=</span> <span class="n">mi_diccionario</span><span class="p">[</span><span class="s">"a"</span><span class="p">]</span>
+
+<span class="n">mi_diccionario</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">"b"</span><span class="p">)</span>  <span class="c1"># Eliminar un par clave-valor por su clave
+</span>
+<span class="n">mi_diccionario</span><span class="p">.</span><span class="n">update</span><span class="p">({</span><span class="s">"e"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s">"f"</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>  <span class="c1"># Actualizar el diccionario con otro diccionario
+</span>
+<span class="n">claves</span> <span class="o">=</span> <span class="n">mi_diccionario</span><span class="p">.</span><span class="n">keys</span><span class="p">()</span>  <span class="c1"># Obtener todas las claves del diccionario
+</span><span class="n">valores</span> <span class="o">=</span> <span class="n">mi_diccionario</span><span class="p">.</span><span class="n">values</span><span class="p">()</span>  <span class="c1"># Obtener todos los valores del diccionario
+</span><span class="n">items</span> <span class="o">=</span> <span class="n">mi_diccionario</span><span class="p">.</span><span class="n">items</span><span class="p">()</span>  <span class="c1"># Obtener todos los pares clave-valor del diccionario
+</span>
+<span class="n">mi_diccionario</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># Eliminar todos los elementos del diccionario
+</span></code></pre></div></div>
+
+<p>Puedes crear un conjunto usando llaves <code class="language-plaintext highlighter-rouge">{}</code> o la función <code class="language-plaintext highlighter-rouge">set()</code>. Los conjuntos o sets son una estructura de datos que es ordenada y donde sus elementos no pueden repetirse, por lo tanto es buena para almacenar id unicos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Crear un conjunto vacío
+</span><span class="n">mi_conjunto</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="c1"># Crear un conjunto con elementos
+</span><span class="n">mi_conjunto</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+
+<span class="c1"># Crear un conjunto a partir de una lista
+</span><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">mi_conjunto</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 4, 5}
+</span>
+</code></pre></div></div>
+
+<h3 id="métodos-comunes">Métodos Comunes</h3>
+
+<ul>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">add(x)</code></strong>: Añade un elemento al conjunto.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 4, 5, 6}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">remove(x)</code></strong>: Elimina un elemento del conjunto. Lanza un <code class="language-plaintext highlighter-rouge">KeyError</code> si el elemento no existe.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 4, 5}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">discard(x)</code></strong>: Elimina un elemento del conjunto si existe. No lanza un errores si el elemento no existe.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 4}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">pop()</code></strong>: Elimina y devuelve el primer elemento del conjunto.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">elemento</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>  <span class="c1"># Devuelve un elemento y elimina del conjunto
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">clear()</code></strong>: Elimina todos los elementos del conjunto.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>  <span class="c1"># set()
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">union(conjunto2)</code></strong>: Devuelve un nuevo conjunto con la unión de dos conjuntos.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">otro_conjunto</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">}</span>
+  <span class="n">union</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">union</span><span class="p">(</span><span class="n">otro_conjunto</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 4, 5, 6, 7}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">intersection(conjunto2)</code></strong>: Devuelve un nuevo conjunto con los elementos comunes a ambos conjuntos. Es decir, los que se repiten en ambos conjuntos.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">interseccion</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">otro_conjunto</span><span class="p">)</span>  <span class="c1"># {4}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">difference(conjunto2)</code></strong>: Devuelve un nuevo conjunto con los elementos del primer conjunto que no están en el segundo. El conjunto que se pasa como parametro es el segundo conjunto.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">diferencia</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">difference</span><span class="p">(</span><span class="n">otro_conjunto</span><span class="p">)</span>  <span class="c1"># {1, 2, 3}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">symmetric_difference(conjunto2)</code></strong>: Devuelve un nuevo conjunto con los elementos que están en uno de los conjuntos, pero no en ambos.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">diferencia_simetrica</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">symmetric_difference</span><span class="p">(</span><span class="n">otro_conjunto</span><span class="p">)</span>  <span class="c1"># {1, 2, 3, 6, 7}
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">issubset(conjunto2)</code></strong>: Devuelve <code class="language-plaintext highlighter-rouge">True</code> si todos los elementos del conjunto están en <code class="language-plaintext highlighter-rouge">conjunto2</code>.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">es_subset</span> <span class="o">=</span> <span class="n">mi_conjunto</span><span class="p">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">otro_conjunto</span><span class="p">)</span>  <span class="c1"># False
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">issuperset(conjunto2)</code></strong>: Devuelve <code class="language-plaintext highlighter-rouge">True</code> si todos los elementos de <code class="language-plaintext highlighter-rouge">conjunto2</code> están en el conjunto.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">es_superset</span> <span class="o">=</span> <span class="n">otro_conjunto</span><span class="p">.</span><span class="n">issuperset</span><span class="p">(</span><span class="n">mi_conjunto</span><span class="p">)</span>  <span class="c1"># True
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="slicing">Slicing</h2>
+
+<p>El slicing (segmentación) es una característica de Python que permite extraer sublistas, subtuplas, o subcadenas de secuencias como listas, tuplas y cadenas. El proceso de acceder a la informacion de listas mediante slicing o bucles es llamada iteracion.</p>
+
+<h3 id="slicing-en-listas">Slicing en Listas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Crear una lista
+</span><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="c1"># Sintaxis básica: lista[inicio:fin:paso]
+</span><span class="n">sub_lista</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>  <span class="c1"># [2, 3, 4, 5, 6]
+</span><span class="n">sub_lista_con_paso</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># [2, 4, 6]
+</span>
+<span class="c1"># Omitir el índice de inicio
+</span><span class="n">inicio_a_5</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># [0, 1, 2, 3, 4, 5]
+</span>
+<span class="c1"># Omitir el índice de fin
+</span><span class="n">de_5_en_adelante</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>  <span class="c1"># [5, 6, 7, 8, 9]
+</span>
+<span class="c1"># Slicing con paso negativo (invertir la lista)
+</span><span class="n">invertida</span> <span class="o">=</span> <span class="n">mi_lista</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+</span></code></pre></div></div>
+
+<h3 id="slicing-en-cadenas">Slicing en Cadenas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Crear una cadena
+</span><span class="n">mi_cadena</span> <span class="o">=</span> <span class="s">"abcdefghij"</span>
+
+<span class="c1"># Sintaxis básica: cadena[inicio:fin:paso]
+</span><span class="n">sub_cadena</span> <span class="o">=</span> <span class="n">mi_cadena</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>  <span class="c1"># "cdefg"
+</span><span class="n">sub_cadena_con_paso</span> <span class="o">=</span> <span class="n">mi_cadena</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># "ceg"
+</span>
+<span class="c1"># Omitir el índice de inicio
+</span><span class="n">inicio_a_5_cadena</span> <span class="o">=</span> <span class="n">mi_cadena</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># "abcdef"
+</span>
+<span class="c1"># Omitir el índice de fin
+</span><span class="n">de_5_en_adelante_cadena</span> <span class="o">=</span> <span class="n">mi_cadena</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>  <span class="c1"># "fghij"
+</span>
+<span class="c1"># Slicing con paso negativo (invertir la cadena)
+</span><span class="n">invertida_cadena</span> <span class="o">=</span> <span class="n">mi_cadena</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># "jihgfedcba"
+</span></code></pre></div></div>
+
+<h3 id="slicing-en-tuplas">Slicing en Tuplas</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Crear una tupla
+</span><span class="n">mi_tupla</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+
+<span class="c1"># Sintaxis básica: tupla[inicio:fin:paso]
+</span><span class="n">sub_tupla</span> <span class="o">=</span> <span class="n">mi_tupla</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>  <span class="c1"># (2, 3, 4, 5, 6)
+</span><span class="n">sub_tupla_con_paso</span> <span class="o">=</span> <span class="n">mi_tupla</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># (2, 4, 6)
+</span>
+<span class="c1"># Omitir el índice de inicio
+</span><span class="n">inicio_a_5_tupla</span> <span class="o">=</span> <span class="n">mi_tupla</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># (0, 1, 2, 3, 4, 5)
+</span>
+<span class="c1"># Omitir el índice de fin
+</span><span class="n">de_5_en_adelante_tupla</span> <span class="o">=</span> <span class="n">mi_tupla</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>  <span class="c1"># (5, 6, 7, 8, 9)
+</span>
+<span class="c1"># Slicing con paso negativo (invertir la tupla)
+</span><span class="n">invertida_tupla</span> <span class="o">=</span> <span class="n">mi_tupla</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+</span></code></pre></div></div>
+
+<h3 id="ejemplo-completo-con-comentarios">Ejemplo Completo con Comentarios</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Listas
+</span><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">])</span>  <span class="c1"># [2, 3, 4, 5, 6]
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">[:</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># [0, 1, 2, 3, 4, 5]
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">[</span><span class="mi">5</span><span class="p">:])</span>  <span class="c1"># [5, 6, 7, 8, 9]
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># [0, 2, 4, 6, 8]
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_lista</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+</span>
+<span class="c1"># Cadenas
+</span><span class="n">mi_cadena</span> <span class="o">=</span> <span class="s">"abcdefghij"</span> <span class="c1"># Asi es, los string tambien son iterables
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_cadena</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">])</span>  <span class="c1"># "cdefg"
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_cadena</span><span class="p">[:</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># "abcdef"
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_cadena</span><span class="p">[</span><span class="mi">5</span><span class="p">:])</span>  <span class="c1"># "fghij"
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_cadena</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># "acegi"
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_cadena</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># "jihgfedcba"
+</span>
+<span class="c1"># Tuplas
+</span><span class="n">mi_tupla</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">7</span><span class="p">])</span>  <span class="c1"># (2, 3, 4, 5, 6)
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">[:</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># (0, 1, 2, 3, 4, 5)
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">[</span><span class="mi">5</span><span class="p">:])</span>  <span class="c1"># (5, 6, 7, 8, 9)
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># (0, 2, 4, 6, 8)
+</span><span class="k">print</span><span class="p">(</span><span class="n">mi_tupla</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+</span></code></pre></div></div>
+
+<h3 id="descripción-del-slicing">Descripción del Slicing</h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">inicio:fin</code></strong>: Selecciona elementos desde <code class="language-plaintext highlighter-rouge">inicio</code> hasta <code class="language-plaintext highlighter-rouge">fin-1</code>. El final es variable, representado por el final o longitud de la lista, el inicio generalmente es 0, pero podemos cambiarlo a lo que queramos.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">inicio:fin:paso</code></strong>: Selecciona elementos desde <code class="language-plaintext highlighter-rouge">inicio</code> hasta <code class="language-plaintext highlighter-rouge">fin-1</code>, saltando <code class="language-plaintext highlighter-rouge">paso</code> elementos. El paso son los saltos que debe dar la lista mientras se va recorriendo, es decir, si vamos a leer los elementos de la lista 1 a 1 o si vamos a dar saltos entre ellos. <code class="language-plaintext highlighter-rouge">[1, 2, 3, 4, 5, 6]</code> ⇒ <code class="language-plaintext highlighter-rouge">[0:5:1] # 1, 2...</code> ⇒ <code class="language-plaintext highlighter-rouge">[::2] # 1, 3, 5</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">[:fin]</code></strong>: Selecciona elementos desde el principio hasta <code class="language-plaintext highlighter-rouge">fin-1</code>. En Python cuando no se especifica  una posicion se obvia y se pone automaticamente, en este caso como el primer elemento no esta especificado el inicio, por lo que se toma como que es 0. <code class="language-plaintext highlighter-rouge">[:] = [0:5]</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">[inicio:]</code></strong>: Selecciona elementos desde <code class="language-plaintext highlighter-rouge">inicio</code> hasta el final. En este caso la representacion seria la misma <code class="language-plaintext highlighter-rouge">[:]</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">[::-1]</code></strong>: Invierte la secuencia. Esto porque el paso es negativo, por lo que va desde el ultimo elemento hacia el primero.</li>
+</ul>
+
+<h1 id="parte-2-1-hora">Parte 2 (+1 hora)</h1>
+
+<h2 id="conversion-de-datos">Conversion de datos</h2>
+
+<p>Para convertir datos se pueden usar funciones como <code class="language-plaintext highlighter-rouge">int()</code> , <code class="language-plaintext highlighter-rouge">float()</code>, <code class="language-plaintext highlighter-rouge">str()</code>,<code class="language-plaintext highlighter-rouge">list()</code>, <code class="language-plaintext highlighter-rouge">bool()</code>, <code class="language-plaintext highlighter-rouge">dict()</code> . Las funciones de conversión de datos no sirven para hacer comparaciones o para transformar variables a otros tipos de datos datos.</p>
+
+<h2 id="funciones">Funciones</h2>
+
+<p>Una funcion es un bloque de codigo que sigue la estructura de tener un identificador o nombre, datos de entrada llamados parametros o argumento y finalmente, este tiene una salida o retorno dependiendo de lo que haga esa funcion. A la hora de definir esta funcion debemos definir lo que va a hacer, el codigo que va a contener.</p>
+
+<p>Para declarar una funcion el nombre puede empezar por una letra o guion bajo, pero no puede ser igual a una palabra reservada por python, la cantidad de codigo que esta puede almacenar es ilimitada, pero lo recomendable es que sean lo menos posible, generalmente las funciones no deberian tener mas de 60 lineas (esto no es un dogma, depende el caso pueden usar esto o no). Las funciones nos sirven para guardar el codigo que es recurrente en nuestro codigo, hace que evitemos repetir lo mismo multiples veces en nuestro codigo.</p>
+
+<p>Aqui podemos ver de nuevo el concepto de entrada y salida. Al definir una funcion se definen sus parametros, que son variables; estos parametros de la funcion pueden ser de cualquier tipo segun se necesite, esta seria la operacion de entrada de la que tenemos control en la funcion. Con el uso de la palabra reservada <code class="language-plaintext highlighter-rouge">return</code> podemos retornar informacion, siendo una operacion de salida dentro de nuestro programa.</p>
+
+<h2 id="argumentos-en-las-funciones">Argumentos en las funciones</h2>
+
+<h3 id="args"><code class="language-plaintext highlighter-rouge">args</code></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">args</code> se utiliza para pasar un número variable de argumentos no nombrados (posicionales) a una función.</li>
+  <li><code class="language-plaintext highlighter-rouge">args</code> agrupa todos los argumentos posicionales adicionales en una tupla.</li>
+</ul>
+
+<h3 id="ejemplo">Ejemplo:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pythonCopy</span> <span class="n">code</span>
+<span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">total</span>
+
+<span class="c1"># Llamadas a la función
+</span><span class="k">print</span><span class="p">(</span><span class="n">suma</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>       <span class="c1"># Output: 6
+</span><span class="k">print</span><span class="p">(</span><span class="n">suma</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span> <span class="c1"># Output: 100
+</span>
+</code></pre></div></div>
+
+<h3 id="kwargs"><code class="language-plaintext highlighter-rouge">*kwargs</code></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">*kwargs</code> se utiliza para pasar un número variable de argumentos nombrados (clave-valor) a una función.</li>
+  <li><code class="language-plaintext highlighter-rouge">*kwargs</code> agrupa todos los argumentos con nombre adicionales en un diccionario.</li>
+</ul>
+
+<h3 id="ejemplo-1">Ejemplo:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pythonCopy</span> <span class="n">code</span>
+<span class="k">def</span> <span class="nf">mostrar_info</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># Llamadas a la función
+</span><span class="n">mostrar_info</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="s">"Juan"</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">ciudad</span><span class="o">=</span><span class="s">"Madrid"</span><span class="p">)</span>
+<span class="c1"># Output:
+# nombre: Juan
+# edad: 25
+# ciudad: Madrid
+</span></code></pre></div></div>
+
+<h2 id="bucles">Bucles</h2>
+
+<p>Los bucles son estructuras de control usadas en la programacion para repetir varias veces acciones repetitivas, estos bucles tienen una sintaxis propia y se usan dependiendo lo que deseen. Los bucles que podemos usar en Python son el bucle <code class="language-plaintext highlighter-rouge">for</code> y <code class="language-plaintext highlighter-rouge">while</code> . Palabras reservadas: <code class="language-plaintext highlighter-rouge">break</code>, <code class="language-plaintext highlighter-rouge">continue</code></p>
+
+<h2 id="formateo-de-texto">Formateo de texto</h2>
+
+<p>En el formateo de texto encontramos una serie de códigos agregados para hacer que los textos tengan cierto formato.</p>
+
+<h2 id="generadores">Generadores</h2>
+
+<p>Sirven para hacer iteradores y guardan su estado entre asignaciones.</p>
+
+<h2 id="lambda-o-anónimas">Lambda o anónimas</h2>
+
+<p>Funciones de una sola línea.</p>
+
+<h2 id="excepciones-y-manejo-de-errores">Excepciones y manejo de errores</h2>
+
+<p><code class="language-plaintext highlighter-rouge">try</code> , <code class="language-plaintext highlighter-rouge">except</code>, <code class="language-plaintext highlighter-rouge">finally</code>.</p>
+
+      </section>
+    </div>
+  </body>
+</html>
